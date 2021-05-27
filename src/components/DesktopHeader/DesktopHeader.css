@@ -1,0 +1,135 @@
+.desktop-header {
+  max-width: 110rem;
+  margin: 0 auto;
+  height: 7rem;
+
+  padding: 0 20px;
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-header__nav {
+  height: inherit;
+
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.desktop-header__nav--list {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.desktop-header__nav--list:not(:first-child):hover {
+  background-color: #043650;
+}
+
+.desktop-header__nav--list:not(:first-child) {
+  padding: 0px 10px;
+}
+
+.desktop-header__nav--link, .desktop-header--help-text {
+  height: inherit;
+
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--text-colour);
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.desktop-header__profile-cart {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-header__profile {
+  flex-basis: 60%;
+  height: inherit;
+  background-color: #043650;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  flex-grow: 2;
+
+  cursor: pointer;
+}
+
+.desktop-header__signin, .desktop-header__cart--text {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--text-colour);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.desktop-header__cart {
+  position: relative;
+
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 5px;
+
+  justify-content: center;
+  align-items: center; 
+
+}
+
+.cart-number-container {
+  position: absolute;
+  top: 5px;
+  right: -5px;
+
+  height: 22px;
+  width: 22px;
+  background-color: var(--primary-colour);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-number {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.desktop-header__cart--text {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .desktop-header__nav--link, .desktop-header--help-text, .desktop-header__signin, .desktop-header__cart--text {
+    font-size: 1.3rem;
+  }
+}

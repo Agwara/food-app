@@ -1,0 +1,31 @@
+.email-subscription {
+  width: 100%;
+  height: 40px;
+}
+
+.email-subscription__input {
+  padding-left: 10px;
+  height: 100%;
+  width: 70%;
+
+  outline: none;
+  border: none;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.email-subscription__btn {
+  height: 100%;
+  width: 30%;
+
+  outline: none;
+  border: none;
+  background-color: var(--primary-colour);
+  color: white;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  cursor: pointer;
+}

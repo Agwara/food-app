@@ -1,0 +1,112 @@
+.sidebar-header__noauth {
+  display: flex;
+  justify-content: space-between;
+}
+
+.noauth__btn {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-colour);
+
+  border: 1px solid var(--primary-colour);
+  border-radius: 5px;
+  text-align: center;
+
+  width: 40%;
+  padding: 5px 0;
+}
+
+.sidebar-header__user-info {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.user-info__initial {
+  padding: 5px 12px;
+  background-color: var(--primary-colour);
+  color: white;
+
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.user-info__container--name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #121212;
+  letter-spacing: 1px;
+}
+
+.user-info__container--email  {
+  font-size: 12px;
+  font-weight: bold;
+  color: #121212;
+  letter-spacing: .5px;
+}
+
+.sidebar-header__user-settings {
+  margin-top: 20px;
+}
+
+.user-settings__header-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-colour);
+  text-transform: uppercase;
+}
+
+.user-settings__list {
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(2, 50%);
+
+  margin-top: 5px;
+}
+
+.user-settings__list--item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.user-settings--item-text {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #121212;
+}
+
+.user-settings__list--item-1, .user-settings__list--item-2 {
+  border-top: solid;
+  border-bottom: solid;
+  border-width: .0625rem;
+  border-color: #e2e2e2;
+}
+
+.user-settings__list--item-4, .user-settings__list--item-3 {
+  border-bottom: solid;
+  border-width: .0625rem;
+  border-color: #e2e2e2;
+}
+
+.user-settings__list--item-1, .user-settings__list--item-3 {
+  border-right: solid;
+  border-width: .0625rem;
+  border-color: #e2e2e2;
+}

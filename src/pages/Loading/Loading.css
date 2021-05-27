@@ -1,0 +1,18 @@
+.loading-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--primary-colour);
+  z-index: 10;
+  
+  box-shadow: 0 0 0.8125rem 0 rgba(0,0,0,.75);
+  animation: 1s ease-out 0s 1 slow-shadow;
+}
+
+.loading-content {
+  background-color: red;
+  max-width: 110rem;
+  height: 60rem;
+}

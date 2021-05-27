@@ -1,0 +1,40 @@
+.sidebar-nav {
+  margin-top: 30px;
+}
+
+.sidebar-nav__header-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-colour);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.sidebar-nav__list {
+  list-style: none;  
+}
+
+.sidebar-nav__list li {
+  border-bottom: 1px solid rgb(223, 222, 222);
+}
+
+.sidebar-nav__list li:first-child {
+  border-top: 1px solid rgb(223, 222, 222);
+}
+
+.sidebar-nav__list--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.sidebar-nav__list--item p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #121212;
+}
+
+.sidebar-nav--angle-right-icon {
+  transform: rotate(-90deg);
+}
